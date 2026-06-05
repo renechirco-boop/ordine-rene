@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0061)https://drinkbr.qromo.it/order/?id=ulDDQL2l30s_P808yR_uvQ-%2D -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head>
+<script src="./data.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<script type="text/javascript" async="" src="./Ordine_606_files/gtm.js"></script><script type="text/javascript" async="" src="./Ordine_606_files/js"></script><script async="" src="./Ordine_606_files/gtm(1).js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -140,6 +141,36 @@ var b,c="__dmtest_"+Math.floor(Math.random()*1E9);for(b=2;b<=a.length;b++){var d
 
   if (document.readyState !== 'loading') init();
   else document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+
+<script id="apply-data-js">
+(function(){
+  function applyTexts(){
+    var d = window.ORDER_DATA; if (!d) return;
+    var pairs = [
+      ["René", d.customer],
+      ["1x Birra Chiara Media", d.product],
+      ["0,4 cl", d.size],
+      ["#606", "#" + d.orderNumber],
+      ["2 min ago", d.timeAgo],
+      ["Thanks for your order!", d.pageTitle]
+    ];
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var n;
+    while (n = w.nextNode()) {
+      var t = n.nodeValue, changed = false;
+      for (var i=0; i<pairs.length; i++) {
+        if (pairs[i][1] && t.indexOf(pairs[i][0]) !== -1) {
+          t = t.split(pairs[i][0]).join(pairs[i][1]);
+          changed = true;
+        }
+      }
+      if (changed) n.nodeValue = t;
+    }
+  }
+  if (document.readyState !== 'loading') applyTexts();
+  else document.addEventListener('DOMContentLoaded', applyTexts);
 })();
 </script>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
