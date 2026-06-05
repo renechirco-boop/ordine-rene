@@ -4,7 +4,6 @@
 window.ORDER_DATA = {
   customer:    "René",
   product:     "1x Aperol Spritz",
-  size:        "",
   orderNumber: "606",
   timeAgo:     "2 min ago",
   pageTitle:   "Thanks for your order!"
