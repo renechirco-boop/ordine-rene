@@ -3,8 +3,8 @@
 
 window.ORDER_DATA = {
   customer:    "René",
-  product:     "1x Birra Chiara Media",
-  size:        "0,4 cl",
+  product:     "1x Aperol Spritz",
+  size:        "",
   orderNumber: "606",
   timeAgo:     "2 min ago",
   pageTitle:   "Thanks for your order!"
