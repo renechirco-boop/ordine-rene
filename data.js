@@ -3,7 +3,7 @@
 
 window.ORDER_DATA = {
   customer:    "René",
-  product:     "2x sesso e samba",
+  product:     "2x coca e sambuca",
   orderNumber: "606",
   timeAgo:     "2 min ago",
   pageTitle:   "Thanks for your order!"
